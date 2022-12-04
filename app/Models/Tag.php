@@ -14,7 +14,7 @@ class Tag extends Model
 	// Изменить поведение модели:	(видимо, чтобы не вставлялись данные со временем)
 	public $timestamps = false;
 
-	public function article() {
+	public function articles() {
 		return $this->belongsToMany(Article::class);
 	}
 }

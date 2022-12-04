@@ -24,6 +24,7 @@ return new class extends Migration
 			$table->text('body');
 			// Путь к фотографии будет храниться в виде строчки:
 			$table->string('img');
+			$table->timestamp('published_at');
 			$table->timestamps();
 			// Используя строчку "timestamps" у таблицы будет создано 2 поля:
 			// created_at и updated_at
